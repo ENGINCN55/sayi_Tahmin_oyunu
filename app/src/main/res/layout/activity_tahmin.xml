@@ -6,18 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".TahminActivity">
 
-    <TextView
-        android:id="@+id/text_yardim"
-        android:layout_width="98dp"
-        android:layout_height="30dp"
-        android:text="Arttır"
-        android:textAlignment="center"
-        android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/txt_girdi"
+    <Button
+        android:id="@+id/btn_Tahmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahmin Et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtGirdi" />
+
+    <EditText
+        android:id="@+id/txtGirdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#AE2828"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Tahmin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/kalan_hak" />
+        app:layout_constraintTop_toBottomOf="@+id/text_yardim" />
 
     <TextView
         android:id="@+id/kalan_hak"
@@ -27,31 +38,19 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/text_yardim"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/txt_girdi"
-        android:layout_width="258dp"
-        android:layout_height="71dp"
-        android:ems="10"
-        android:hint="Sayı Giriniz"
-        android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/btn_tahmin"
+    <TextView
+        android:id="@+id/text_yardim"
+        android:layout_width="155dp"
+        android:layout_height="49dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtGirdi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_yardim" />
+        app:layout_constraintTop_toBottomOf="@+id/kalan_hak" />
 
-    <Button
-        android:id="@+id/btn_tahmin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tahmin Et"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_girdi" />
 </androidx.constraintlayout.widget.ConstraintLayout>

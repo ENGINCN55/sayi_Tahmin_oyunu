@@ -16,5 +16,10 @@ class SonucActivity : AppCompatActivity() {
             finish()
         }
 
+
+
+
     }
+
+
 }
